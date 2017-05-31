@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple WYSIWYG Editor</title>      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/598c8aa2ed.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        
+         <div class="container">
+            <div class="toolbar">
+                <a href="#" data-command='undo' data-toggle="tooltip" data-placement="bottom" title="Undo"><i class='fa fa-undo'></i></a>
+                <a href="#" data-command='redo' data-toggle="tooltip" data-placement="bottom" title="Redo"><i class='fa fa-repeat'></i></a>
+                <a href="#" data-command='bold' data-toggle="tooltip" data-placement="bottom" title="Bold"><i class='fa fa-bold'></i></a>
+                <a href="#" data-command='italic' data-toggle="tooltip" data-placement="bottom" title="Italic"><i class='fa fa-italic'></i></a>
+                <a href="#" data-command='underline' data-toggle="tooltip" data-placement="bottom" title="Underline"><i class='fa fa-underline'></i></a>
+                <a href="#" data-command='strikeThrough' data-toggle="tooltip" data-placement="bottom" title="Strike Through"><i class='fa fa-strikethrough'></i></a>
+                <a href="#" data-command='justifyLeft' data-toggle="tooltip" data-placement="bottom" title="Justify Left"><i class='fa fa-align-left'></i></a>
+                <a href="#" data-command='justifyCenter' data-toggle="tooltip" data-placement="bottom" title="Justify Center"><i class='fa fa-align-center'></i></a>
+                <a href="#" data-command='justifyRight' data-toggle="tooltip" data-placement="bottom" title="Justify Right"><i class='fa fa-align-right'></i></a>
+                <a href="#" data-command='justifyFull' data-toggle="tooltip" data-placement="bottom" title="Justify Full"><i class='fa fa-align-justify'></i></a>
+                <a href="#" data-command='indent' data-toggle="tooltip" data-placement="bottom" title="Indent"><i class='fa fa-indent'></i></a>
+                <a href="#" data-command='outdent' data-toggle="tooltip" data-placement="bottom" title="Outdent"><i class='fa fa-outdent'></i></a>
+                <a href="#" data-command='insertUnorderedList' data-toggle="tooltip" data-placement="bottom" title="Insert Unordered List"><i class='fa fa-list-ul'></i></a>
+                <a href="#" data-command='insertOrderedList' data-toggle="tooltip" data-placement="bottom" title="Insert Ordered List"><i class='fa fa-list-ol'></i></a>
+                <a href="#" data-command='h1' data-toggle="tooltip" data-placement="bottom" title="H1">H1</a>
+                <a href="#" data-command='h2' data-toggle="tooltip" data-placement="bottom" title="H2">H2</a>
+                <a href="#" data-command='createlink' data-toggle="tooltip" data-placement="bottom" title="Create Link"><i class='fa fa-link'></i></a>
+                <a href="#" data-command='unlink' data-toggle="tooltip" data-placement="bottom" title="Unlink"><i class='fa fa-unlink'></i></a>
+                <a href="#" data-command='insertimage' data-toggle="tooltip" data-placement="bottom" title="Insert Image"><i class='fa fa-image'></i></a>
+                <a href="#" data-command='p' data-toggle="tooltip" data-placement="bottom" title="Paragraph">P</a>
+                <a href="#" data-command='subscript' data-toggle="tooltip" data-placement="bottom" title="Subscript"><i class='fa fa-subscript'></i></a>
+                <a href="#" data-command='superscript' data-toggle="tooltip" data-placement="bottom" title="Superscript"><i class='fa fa-superscript'></i></a>
+            </div>
+            <br/>
+
+            <p id="ta-log">Draft.</p>
+
+            <div is="#editor">
+                <h2 id="title" class="editor" placeholder="Title" contenteditable="true"></h2> <br/>
+                <p id="description" class="editor" placeholder="Description ..." contenteditable="true"></p>
+            </div>
+
+            
+            
+        </div>
+
+    </body> 
+</html>
